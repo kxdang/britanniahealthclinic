@@ -1,0 +1,60 @@
+.layout {
+  max-width: 120rem;
+  margin: 2rem auto;
+  min-height: 50rem;
+  font-size: 1.6rem; }
+  .layout__cards {
+    padding-top: 15rem;
+    display: flex;
+    justify-content: space-evenly; }
+    .layout__cards--card {
+      padding: 2.5rem;
+      text-align: center;
+      border-radius: 3px;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      flex: 0 0 20em; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5rem; }
+  .header__logo img {
+    max-width: 50rem;
+    height: auto; }
+  .header__nav-container {
+    display: flex;
+    font-size: 1.6rem; }
+    .header__nav-container--list {
+      display: flex;
+      align-items: center;
+      list-style-type: none; }
+      .header__nav-container--list--item a {
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-left: 2rem; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+li {
+  list-style-type: none; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777; }
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 600; }
