@@ -1,7 +1,7 @@
 .layout {
   max-width: 120rem;
   margin: 2rem auto;
-  min-height: 50rem;
+
   font-size: 1.6rem;
 
   &__clinic {
@@ -9,14 +9,13 @@
     justify-content: space-around;
 
     img {
-      max-width: 39rem;
-      height: auto;
+      width: 39rem;
       height: auto;
     }
   }
 
   &__cards {
-    padding-top: 15rem;
+    padding-top: 10rem;
     display: flex;
     justify-content: space-evenly;
 
@@ -51,6 +50,68 @@
       &:hover {
         transform: translateY(-1.5rem) scale(1.03);
       }
+    }
+  }
+
+  &__about {
+    padding-bottom: 8rem;
+    &__heading {
+      text-align: center;
+      padding: 8rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+
+    &__heading {
+      text-align: center;
+      padding: 5rem;
+      text-transform: uppercase;
+    }
+
+    &--clinic a {
+      color: $color-primary-green;
+      text-decoration: none;
+      border-bottom: 1px dotted $color-primary-green;
+      &:hover {
+        color: $color-grey-dark-3;
+      }
+    }
+    &--clinic svg {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+
+    &--pharm a {
+      color: $color-primary-green;
+      text-decoration: none;
+      border-bottom: 1px dotted $color-primary-green;
+      &:hover {
+        color: $color-grey-dark-3;
+      }
+    }
+    &--pharm svg {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+
+    &--location a {
+      color: $color-primary-green;
+      text-decoration: none;
+      border-bottom: 1px dotted $color-primary-green;
+
+      &:hover {
+        color: $color-grey-dark-3;
+      }
+    }
+    &--location svg {
+      height: 1.5rem;
+      width: 1.5rem;
     }
   }
 }

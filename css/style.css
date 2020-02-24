@@ -29,13 +29,14 @@ h1 {
   margin: 2rem auto;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 5rem; }
+  padding-bottom: 1rem; }
   .header__logo img {
     max-width: 50rem;
     height: auto; }
   .header__nav-container {
     display: flex;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    font-weight: 600; }
     .header__nav-container--list {
       display: flex;
       align-items: center;
@@ -43,22 +44,23 @@ h1 {
       .header__nav-container--list--item a {
         text-transform: uppercase;
         text-decoration: none;
-        margin-left: 2rem; }
+        margin-left: 2rem;
+        color: #777; }
+        .header__nav-container--list--item a:hover {
+          color: #166d37; }
 
 .layout {
   max-width: 120rem;
   margin: 2rem auto;
-  min-height: 50rem;
   font-size: 1.6rem; }
   .layout__clinic {
     display: flex;
     justify-content: space-around; }
     .layout__clinic img {
-      max-width: 39rem;
-      height: auto;
+      width: 39rem;
       height: auto; }
   .layout__cards {
-    padding-top: 15rem;
+    padding-top: 10rem;
     display: flex;
     justify-content: space-evenly; }
     .layout__cards--icon {
@@ -82,3 +84,50 @@ h1 {
       transition: all 0.2s; }
       .layout__cards--card:hover {
         transform: translateY(-1.5rem) scale(1.03); }
+  .layout__about {
+    padding-bottom: 8rem; }
+    .layout__about__heading {
+      text-align: center;
+      padding: 8rem;
+      text-transform: uppercase; }
+  .layout__contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center; }
+    .layout__contact__heading {
+      text-align: center;
+      padding: 5rem;
+      text-transform: uppercase; }
+    .layout__contact--clinic a {
+      color: #166d37;
+      text-decoration: none;
+      border-bottom: 1px dotted #166d37; }
+      .layout__contact--clinic a:hover {
+        color: #333; }
+    .layout__contact--clinic svg {
+      height: 1.5rem;
+      width: 1.5rem; }
+    .layout__contact--pharm a {
+      color: #166d37;
+      text-decoration: none;
+      border-bottom: 1px dotted #166d37; }
+      .layout__contact--pharm a:hover {
+        color: #333; }
+    .layout__contact--pharm svg {
+      height: 1.5rem;
+      width: 1.5rem; }
+    .layout__contact--location a {
+      color: #166d37;
+      text-decoration: none;
+      border-bottom: 1px dotted #166d37; }
+      .layout__contact--location a:hover {
+        color: #333; }
+    .layout__contact--location svg {
+      height: 1.5rem;
+      width: 1.5rem; }
+
+.phone_icon {
+  color: #166d37;
+  width: 1.5rem;
+  height: 1.5rem; }
