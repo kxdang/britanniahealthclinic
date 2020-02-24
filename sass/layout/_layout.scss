@@ -4,16 +4,53 @@
   min-height: 50rem;
   font-size: 1.6rem;
 
+  &__clinic {
+    display: flex;
+    justify-content: space-around;
+
+    img {
+      max-width: 39rem;
+      height: auto;
+      height: auto;
+    }
+  }
+
   &__cards {
     padding-top: 15rem;
     display: flex;
     justify-content: space-evenly;
+
+    &--icon {
+      margin: 0 auto;
+      color: rgba($color-primary-green, 0.9);
+      width: 5rem;
+      height: 5rem;
+      transition: all 0.2s;
+
+      &:hover {
+        color: rgba($color-primary-green, 1);
+      }
+    }
+
+    &--title {
+      padding-bottom: 2rem;
+    }
+
+    &--list {
+      text-align: left;
+    }
+
     &--card {
       padding: 2.5rem;
       text-align: center;
       border-radius: 3px;
       box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
       flex: 0 0 20em;
+      transition: all 0.2s;
+
+      &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+      }
     }
   }
 }
